@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Brothers]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="suite.listener.ExtentReportNG"/>
+  </listeners>
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="suite.test.RegisteredCheckoutTest">
+        <methods>
+          <include name="screenShot"/>
+          <include name="RegisteredUser_GroundShipping_Master"/>
+          <include name="setUpEnv"/>
+          <include name="setDriver"/>
+        </methods>
+      </class> <!-- suite.test.RegisteredCheckoutTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Brothers] -->
